@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+	 crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+	 crossorigin="anonymous"></script>
+	<script src="js/bootstrap.js"></script>
+
+
+</head>
+
+<body>
+	<div class="container">
+		<div class="main-heading">
+
+		</div>
+		<div class="main-content">
+			<form class="mx-auto" style="width: 760px;">
+				<div class="form-group">
+					<div class="row">
+						<div class="col">
+							<label for="nickname1">Nickname:</label>
+							<label id="asterisk">*</label>
+							<input type="text" class="form-control" id="nickname" placeholder="" required>
+							<small id="nickHelp" class="form-text">Name for your Webcam Overlay text.</small>
+						</div>
+						<div class="col">
+							<label for="twitchUrl1">Twitch URL:</label>
+							<label id="asterisk">*</label>
+							<input type="text" class="form-control" id="twitchUrl" placeholder="" required>
+							<small id="twitchUrlHelp" class="form-text">Full Twitchtv URL.</small>
+						</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="row">
+						<div class="col">
+							<label for="twitterUrl1">Twitter URL:</label>
+							<label id="asterisk">*</label>
+							<input type="text" class="form-control" id="twitterUrl" placeholder="" required>
+							<small id="twitterUrlHelp" class="form-text">Full Twitter URL.</small>
+						</div>
+						<div class="col">
+							<label for="youtubeUrl1">Youtube URL:</label>
+							<input type="text" class="form-control" id="youtubeUrl" placeholder="">
+							<small id="youtubeUrlHelp" class="form-text">Full Youtube URL.</small>
+						</div>
+					</div>
+					<div class="form-group" id="colorSchemeCon">
+						<div class="row">
+							<div class="col">
+								<label id="color1" for="color1">Color Scheme:</label>
+								<label id="asterisk">*</label>
+								<input type="text" class="form-control" id="color1Input" placeholder="Usually brighter colors" required>
+								<small id="color1Help" class="form-text">Primary Color.</small>
+							</div>
+							<div class="col">
+								<label class="invisible" for="color2">Im a godlike programmer</label>
+								<input type="text" class="form-control" id="color2Input" placeholder="Usually darker colors/tones" required>
+								<small id="color2Help" class="form-text">Secondary Color.</small>
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="dColor1">Detailed/Specific Color Scheme:</label>
+						<input type="text" class="form-control" id="dColor1" placeholder="">
+						<small id="dColor1Help" class="form-text">Use if you have a specific hex code or a third+ color.</small>
+					</div>
+					<div class="form-group">
+						<label for="theme1">Theme:</label>
+						<label id="asterisk">*</label>
+						<input type="text" class="form-control" id="theme1" placeholder="Be as descriptive as you can but try to also leave room for creativity"
+						 required>
+						<small id="theme1Help" class="form-text">Examples: Jungle, Ice, Ahri, Tracer, Angelic, Anime, Fire, Diablo 3, Evil, Pikachu etc.</small>
+					</div>
+					<div class="form-group">
+						<label for="ref1">Reference Links:</label>
+						<textarea class="form-control" id="addNotes1" placeholder=""></textarea>
+						<small id="ref1Help" class="form-text">Paste URL's of images here that you would like me to use or get a 'feel' from.</small>
+					</div>
+					<div class="input-group mb-3">
+						<div class="row" id="uploadBox">
+							<label for="upload1" id="uploadLabel">Upload Images:</label>
+							<div class="custom-file">
+								<input type="file" class="custom-file-input" id="chooseFileLine">
+								<label class="custom-file-label" for="inputGroupFile02">Choose file</label>
+							</div>
+						</div>
+						<div class="input-group-append">
+							<span class="input-group-text" id="uploadButton">Upload</span>
+						</div>
+				<div class="form-group">
+						<label for="upload1" id="findMeLabel1">How did you find me?: </label>
+						<label id="asterisk">*</label><br>
+						<div class="custom-control custom-radio custom-control-inline">
+						<input type="radio" id="radio1" name="customRadioInline1" class="custom-control-input">
+						<label class="custom-control-label" for="customRadioInline1">Twitter</label>
+					</div>
+					<div class="custom-control custom-radio custom-control-inline">
+						<input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+						<label class="custom-control-label" for="customRadioInline2">Reddit</label>
+					</div>
+					<div class="custom-control custom-radio custom-control-inline">
+						<input type="radio" id="customRadioInline3" name="customRadioInline3" class="custom-control-input">
+						<label class="custom-control-label" for="customRadioInline3">Twitchtv Streamer Page</label>
+					</div>
+					<div class="custom-control custom-radio custom-control-inline">
+							<input type="radio" id="customRadioInline4" name="customRadioInline4" class="custom-control-input">
+							<label class="custom-control-label" for="customRadioInline4">Other</label>
+					</div>
+					</div>
+					<div>
+						<label for="ref1">Additional Notes:</label>
+						<div class="input-group">
+							<textarea class="form-control" id="addNotes1" placeholder="Fill with your ideas for words on panels, donation bars etc"></textarea>
+						</div>
+						<small id="ref1Help" class="form-text">Please use this field as much as possible! Be descriptive. Anything you THINK we need, put it here!</small>
+					</div>
+						<div class="form-check col-sm-12" id="termsBox1">
+							<input type="checkbox" class="form-check-input" id="termsCheck1" required>
+							<label class="form-check-label" for="exampleCheck1">Terms & Conditions:</label>
+							<label id="asterisk">*</label>
+						</div>
+					<button type="submit" class="btn btn-primary">Submit</button>
+			</form>
+			</div>
+		</div>
+</body>
+
+</html>
