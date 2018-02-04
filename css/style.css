@@ -55,3 +55,58 @@ form small{
     resize: none;
     padding: 10px;
 }
+
+/* Field background color+focus color */
+input [type="text"], [class="form-control"], textarea{
+    background-color: #252327;
+    color: #e0a320;
+    border-color: #1b1b1a;
+     /* original highlight color: 996f14 */
+     border-bottom-color: #996f14;
+     border-width: 2px;
+     border-bottom-width: 1px;
+     box-shadow: 3px 7px 3px #242129;
+     
+}
+input [type="text"]:focus, [class="form-control"]:focus, textarea {
+    background-color: #302c33;
+    /* original highlight color: 4f4a53 */
+    box-shadow: 0 0 5px #e0a320;
+    border-color: #e0a320;
+    color: #e0a320;
+}
+
+/* Placeholder font color */
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder{
+    color: #a18843;
+}
+input:focus::-moz-placeholder, textarea:focus::-moz-placeholder{
+    color: #a18843;
+}
+input:focus:-moz-placeholder, textarea:focus:-moz-placeholder{
+    color: #a18843;
+}
+input:focus:-ms-input-placeholder, textarea:focus:-ms-input-placeholder{
+    color: #a18843;
+}
+
+#termsSmall1{
+    padding-bottom: 10px;
+}
+
+#terms-conditions{
+    color: #af7d10;
+    background-color: #1d1c1f;
+    border-color: #121014;
+    border-width: 3px;
+}
+
+#submit-request{
+    color: #af7d10;
+    background-color: #1f1a2b;
+    border-color: #e0a320;
+}
+
+.custom-control-label{
+    padding-left: 5px;
+}
