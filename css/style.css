@@ -49,3 +49,9 @@ form small{
 .main-content{
     width: 80%;
 }
+
+#terms-conditions{
+    overflow: hidden;
+    resize: none;
+    padding: 10px;
+}
