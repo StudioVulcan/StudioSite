@@ -120,3 +120,7 @@ input:focus:-ms-input-placeholder, textarea:focus:-ms-input-placeholder{
 #find-textbox{
     display: none;
 }
+
+.custom-radio .custom-control-input:checked ~ .custom-control-label::before{
+    background-color: #ecac22;
+}
