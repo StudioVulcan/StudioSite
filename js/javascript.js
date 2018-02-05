@@ -1,3 +1,9 @@
+function popOutBox(){
+	// pop-out box for 'find me' options
+	document.getElementById("findMeBox1").invisible = false;
+}
+
+
 function ActivateSubmit(){
 	// Remove disabled from submit
 	document.getElementById("submit-request").disabled = false;
