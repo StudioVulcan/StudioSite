@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/style.css">
 
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	 crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
 	 crossorigin="anonymous"></script>
@@ -108,37 +108,31 @@
 	
 				</div>
 
-			<div class="row">
-				<div class="form-section" class="col-md-12">
-					<div class="form-group">
-						<label for="upload1" id="findMeLabel1">How did you find me?: </label>
-						<label id="asterisk">*</label>
-						<br>
-						<div class="custom-control-inline custom-radio">
-							<input type="radio" id="customControlValidation1" name="findme" class="custom-control-input-inline" value="Twitter">
-							<label class="custom-control-label" for="customControlValidation1">Twitter</label>
-						</div>
-						<div class="custom-control-inline custom-radio">
-							<input type="radio" id="customControlValidation2" name="findme" class="custom-control-input-inline" value="Reddit">
-							<label class="custom-control-label" for="customControlValidation2">Reddit</label>
-						</div>
-						<div class="custom-control-inline custom-radio">
-							<input type="radio" id="customControlValidation3" name="findme" class="custom-control-input-inline" value="Twitchtv Streamer Page">
-							<label class="custom-control-label" for="customControlValidation3">Twitchtv Streamer Page</label>
-						</div>
-						<div class="custom-control-inline custom-radio">
-							<input type="radio" id="customControlValidation4" name="findme" class="custom-control-input-inline" value="Other">
-							<label class="custom-control-label" for="customControlValidation4">Other</label>
-						</div>
+			<div class="form-section find-me-section" class="col-md-12">
+				<div class="form-group">
+					<label for="upload1" id="findMeLabel1">How did you find me?: </label>
+					<label id="asterisk">*</label>
+					<br>
+					<div class="custom-control custom-radio">
+						<input type="radio" id="customControlValidation1" name="findme" class="custom-control-input" value="Twitter">
+						<label class="custom-control-label" for="customControlValidation1">Twitter</label>
+					</div>
+					<div class="custom-control custom-radio">
+						<input type="radio" id="customControlValidation2" name="findme" class="custom-control-input" value="Reddit">
+						<label class="custom-control-label" for="customControlValidation2">Reddit</label>
+					</div>
+					<div class="custom-control custom-radio">
+						<input type="radio" id="customControlValidation3" name="findme" class="custom-control-input" value="Twitchtv">
+						<label class="custom-control-label" for="customControlValidation3">Twitchtv Streamer Page</label>
+					</div>
+					<div class="custom-control custom-radio">
+						<input type="radio" id="customControlValidation4" name="findme" class="custom-control-input" value="Other">
+						<label class="custom-control-label" for="customControlValidation4">Other</label>
 					</div>
 				</div>
-				<div class="row">
-					<div class="form-section">
-						<div class="col form-group">
-								<label class= "invisible" for="finedMeBox1">Im a godlike programmer</label>
-							<input type="text" class="invisible" id="fineMeBox1" placeholder="">
-						</div>
-					</div>
+				<div class="form-group" id="find-textbox">
+						<label for="finedMeBox1">Im a godlike programmer</label>
+					<input type="text" class="form-control" id="fineMeBox" placeholder="">
 				</div>
 			</div>
 				<div class="form-section">
