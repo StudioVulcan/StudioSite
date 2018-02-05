@@ -61,11 +61,11 @@ input [type="text"], [class="form-control"], textarea{
     background-color: #252327;
     color: #e0a320;
     border-color: #1b1b1a;
-     /* original highlight color: 996f14 */
-     border-top-color: #996f14;
-     border-width: 2px;
-     border-bottom-width: 1px;
-     box-shadow: 3px 7px 3px #242129;
+    /* original highlight color: 996f14 */
+    border-top-color: #996f14;
+    border-width: 2px;
+    border-bottom-width: 1px;
+    box-shadow: 3px 7px 3px #242129;
      
 }
 input [type="text"]:focus, [class="form-control"]:focus, textarea {
@@ -107,6 +107,10 @@ input:focus:-ms-input-placeholder, textarea:focus:-ms-input-placeholder{
     border-color: #e0a320;
 }
 
+#submit-request:disabled{
+    cursor: not-allowed;
+}
+
 .custom-control{
     display: inline-block;
     margin-right: 25px;
@@ -123,4 +127,31 @@ input:focus:-ms-input-placeholder, textarea:focus:-ms-input-placeholder{
 
 .custom-radio .custom-control-input:checked ~ .custom-control-label::before{
     background-color: #ecac22;
+}
+
+.file-list > li{
+    padding: 5px;
+    background-color: #252327;  
+    color: #e0a320;
+}
+
+.file-list > li:nth-child(even){
+    background-color: #353238;      
+}
+
+.custom-file-label{
+    border: none;
+    background-color: #252327;  
+    border-top-color: #996f14;
+    border-width: 2px;
+    border-top-width: 1px;
+    box-shadow: 3px 7px 3px #242129;
+    color: #e0a320;
+}
+
+.file-thumbnail{
+    width: 30px;
+    max-height: 30px;
+    border: 1px solid #fff;
+    margin-right: 20px;
 }

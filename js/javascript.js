@@ -25,10 +25,27 @@ function HandleFindTextbox(){
 	});
 }
 
+function HandleFileListInput(){
+	$('#chooseFileLine').on("change", function(){
+		$('.file-list').empty();
+		for (const iterator of this.files) {
+			let listItem = $("<li class='list-group-item'><span>" + iterator.name + "</span></li>");
+			listItem.prepend("<img class='file-thumbnail' src=''/>");
+			$('.file-list').append(listItem);
+			var reader = new FileReader();
+			reader.onload = function(e) {
+				listItem.find('img').attr('src', e.target.result);
+			};
+			reader.readAsDataURL(iterator);
+		}
+	});
+}
+
 // Bind all events 
 function BindAllEvents(){
 	HandleTermsChange();
 	HandleFindTextbox();
+	HandleFileListInput();
 }
 
 // Subscribe to when the page finishes loading
