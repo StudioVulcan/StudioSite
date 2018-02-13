@@ -195,6 +195,11 @@ input:focus:-ms-input-placeholder, textarea:focus:-ms-input-placeholder{
     color: #e0a320;
 }
 
+.navbar-brand > img{
+    width: auto;
+    height: 45px;
+}
+
 #uploadBox{
     padding-top: 15px;
     padding-bottom: 15px;
