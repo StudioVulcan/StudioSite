@@ -164,6 +164,15 @@ input:focus:-ms-input-placeholder, textarea:focus:-ms-input-placeholder{
     color: #e0a320;
 }
 
+.custom-file-label::after{
+    line-height: 22px;
+    padding: 0.375rem 2.25rem;
+}
+
+.custom-file{
+    border-top: 2px solid #d1991f;
+}
+
 .file-thumbnail{
     width: 30px;
     max-height: 30px;
@@ -174,16 +183,19 @@ input:focus:-ms-input-placeholder, textarea:focus:-ms-input-placeholder{
 #navBar1{
     background-color: #1f1b22;
     position: sticky;
+    border-top: 1px #d1991f solid;
+    border-bottom: 3px #121014 solid;
 }
 #navbarNav > ul > li > a{
     color: #e0a320;
     font-family: 'Kaushan Script';
+    font-size: 18px;
 }
 #navBar1 > a{
     color: #e0a320;
 }
 
 #uploadBox{
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
