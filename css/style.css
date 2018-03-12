@@ -36,9 +36,10 @@ body{
     border-radius: 3px;
 }
 form label{
-    color: #ecac22;
+    color: #e4bf19;
     font-family: 'Kaushan Script';
     font-size: 20px;
+    text-shadow: 3px 3px 3px #1e1a22;
 }
 
 form small{
@@ -77,7 +78,7 @@ input [type="text"], [class="form-control"], textarea{
     color: #e0a320;
     border-color: #1b1b1a;
     /* original highlight color: 996f14 */
-    border-top-color: #d1991f;
+    border-top-color: #e4bf19;
     border-width: 2px;
     border-bottom-width: 1px;
     box-shadow: 3px 7px 3px #242129;
@@ -87,7 +88,7 @@ input [type="text"]:focus, [class="form-control"]:focus, textarea {
     background-color: #302c33;
     /* original highlight color: 4f4a53 */
     box-shadow: 0 0 5px #e0a320;
-    border-color: #e0a320;
+    border-color: #e4bf19;
     color: #e0a320;
 }
 
@@ -119,7 +120,7 @@ input:focus:-ms-input-placeholder, textarea:focus:-ms-input-placeholder{
 #submit-request{
     color: #af7d10;
     background-color: #1f1a2b;
-    border-color: #e0a320;
+    border-color: #e4bf19;
 }
 
 #submit-request:disabled{
@@ -157,11 +158,12 @@ input:focus:-ms-input-placeholder, textarea:focus:-ms-input-placeholder{
 .custom-file-label{
     border: none;
     background-color: #252327;  
-    border-top-color: #996f14;
+    border-top-color: #e4bf19;
     border-width: 2px;
     border-top-width: 1px;
     box-shadow: 3px 7px 3px #242129;
-    color: #e0a320;
+    color: #e4bf19;
+    text-shadow: 0px 0px 0px #242129;
 }
 
 .custom-file-label::after{
@@ -170,7 +172,7 @@ input:focus:-ms-input-placeholder, textarea:focus:-ms-input-placeholder{
 }
 
 .custom-file{
-    border-top: 2px solid #d1991f;
+    border-top: 2px solid #e4bf19;
 }
 
 .file-thumbnail{
@@ -183,16 +185,21 @@ input:focus:-ms-input-placeholder, textarea:focus:-ms-input-placeholder{
 #navBar1{
     background-color: #1f1b22;
     position: sticky;
-    border-top: 1px #d1991f solid;
+    border-top: 1px #e4bf19 solid;
     border-bottom: 3px #121014 solid;
+    box-shadow: 0px 6px 20px #121016
 }
 #navbarNav > ul > li > a{
-    color: #e0a320;
+    color: #e4bf19;
     font-family: 'Kaushan Script';
     font-size: 18px;
+    margin-left: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    letter-spacing: 1px;
 }
 #navBar1 > a{
-    color: #e0a320;
+    color: #e4bf19;
 }
 
 .navbar-brand > img{
@@ -203,4 +210,25 @@ input:focus:-ms-input-placeholder, textarea:focus:-ms-input-placeholder{
 #uploadBox{
     padding-top: 15px;
     padding-bottom: 15px;
+}
+
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 7px;
+    text-align: center;
 }
