@@ -111,7 +111,7 @@ input:focus:-ms-input-placeholder, textarea:focus:-ms-input-placeholder{
 }
 
 #terms-conditions{
-    color: #c28a12;
+    color: #c29912;
     background-color: #1d1c1f;
     border-color: #121014;
     border-width: 3px;
@@ -212,23 +212,20 @@ input:focus:-ms-input-placeholder, textarea:focus:-ms-input-placeholder{
     padding-bottom: 15px;
 }
 
-div.gallery {
-    margin: 5px;
-    border: 1px solid #ccc;
-    float: left;
-    width: 180px;
+#orderBox{
+    margin-top: -5px;
+    margin-bottom: -5px;
+    border: #121014 3px solid;
 }
 
-div.gallery:hover {
-    border: 1px solid #777;
+#entireOrderSection2{
+    margin-top: 30px;
 }
 
-div.gallery img {
-    width: 100%;
-    height: auto;
+#entireOrderSection{
+    margin-top: -10px;
 }
 
-div.desc {
-    padding: 7px;
-    text-align: center;
+#entireOrderSection3{
+    margin-top: 30px;
 }
